@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+     var timer: Timer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(repaintS), userInfo: nil, repeats: true)
+        
+        
+    }
+    
+    @objc func repaintS()
+    {
+        print("Minute Passed")
     }
 
 
