@@ -9,7 +9,21 @@
 import UIKit
 
 class MarketViewController: UIViewController {
-
+    @IBOutlet weak var Butt1: UIButton!
+    @IBOutlet weak var Butt2: UIButton!
+    @IBOutlet weak var Butt3: UIButton!
+    @IBOutlet weak var Butt4: UIButton!
+    
+    @IBOutlet weak var Butt5: UIButton!
+    @IBOutlet weak var Butt6: UIButton!
+    @IBOutlet weak var Butt7: UIButton!
+    @IBOutlet weak var Butt8: UIButton!
+    
+    @IBOutlet weak var Butt9: UIButton!
+    @IBOutlet weak var Butt10: UIButton!
+    @IBOutlet weak var Butt11: UIButton!
+    @IBOutlet weak var Butt12: UIButton!
+    @IBOutlet weak var BUYSELL: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +41,21 @@ class MarketViewController: UIViewController {
     }
     */
 
+    
+    @IBAction func BuySell(_ sender: UISegmentedControl) {
+      
+            switch BUYSELL.selectedSegmentIndex
+            {
+            case 0:
+                
+            Butt1.titleLabel.text = "SUP"
+                
+            case 1:
+                Butt1.titleLabel.text = "SUP9"
+                
+            default:
+                break
+            }
+        
+    }
 }

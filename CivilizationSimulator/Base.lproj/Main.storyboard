@@ -447,6 +447,9 @@
                                     <segment title="BUY"/>
                                     <segment title="SELL"/>
                                 </segments>
+                                <connections>
+                                    <action selector="BuySell:" destination="rS2-Px-qtQ" eventType="valueChanged" id="f2l-Hh-cjI"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -462,6 +465,21 @@
                         <viewLayoutGuide key="safeArea" id="ZGu-ok-eox"/>
                     </view>
                     <navigationItem key="navigationItem" title="Market" id="bhq-Ox-fPq"/>
+                    <connections>
+                        <outlet property="BUYSELL" destination="FpI-jZ-v7I" id="L72-0h-W0b"/>
+                        <outlet property="Butt1" destination="aVH-hV-tA7" id="TuQ-Hi-9eY"/>
+                        <outlet property="Butt10" destination="JPN-Od-UK8" id="whD-Q0-6mx"/>
+                        <outlet property="Butt11" destination="fhO-VL-nyr" id="ee0-aR-Ysh"/>
+                        <outlet property="Butt12" destination="Wh9-Yy-ijt" id="rXB-hU-2Xp"/>
+                        <outlet property="Butt2" destination="p9v-fi-Msg" id="HO1-UE-Q08"/>
+                        <outlet property="Butt3" destination="aFJ-ID-3mf" id="hps-YP-Sb1"/>
+                        <outlet property="Butt4" destination="Bfa-42-Pak" id="j1k-FZ-84K"/>
+                        <outlet property="Butt5" destination="xMr-ka-n59" id="WQE-tY-FLD"/>
+                        <outlet property="Butt6" destination="cE1-n1-qkn" id="vjV-n4-kdh"/>
+                        <outlet property="Butt7" destination="NKM-Na-4qn" id="ogD-S9-BEd"/>
+                        <outlet property="Butt8" destination="XFH-xW-qfg" id="a5x-je-b6s"/>
+                        <outlet property="Butt9" destination="mL7-WO-A7P" id="b9X-iB-EJr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gPv-OS-YMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -575,7 +593,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVt-5J-U2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="269.60000000000002" y="792.95352323838085"/>
+            <point key="canvasLocation" x="-76" y="642"/>
         </scene>
     </scenes>
 </document>
