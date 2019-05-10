@@ -11,6 +11,7 @@
 		09C97DFF228478C000F84098 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97DFE228478C000F84098 /* ResourcesViewController.swift */; };
 		09C97E01228478DD00F84098 /* CityHallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97E00228478DD00F84098 /* CityHallViewController.swift */; };
 		09C97E03228478EB00F84098 /* UpgradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97E02228478EB00F84098 /* UpgradesViewController.swift */; };
+		2D3EDA862285C69D00683EBE /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3EDA852285C69D00683EBE /* Resource.swift */; };
 		2D579254228471B700E9BD26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D579253228471B700E9BD26 /* AppDelegate.swift */; };
 		2D579256228471B700E9BD26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D579255228471B700E9BD26 /* ViewController.swift */; };
 		2D579259228471B700E9BD26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D579257228471B700E9BD26 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		09C97DFE228478C000F84098 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		09C97E00228478DD00F84098 /* CityHallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityHallViewController.swift; sourceTree = "<group>"; };
 		09C97E02228478EB00F84098 /* UpgradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradesViewController.swift; sourceTree = "<group>"; };
+		2D3EDA852285C69D00683EBE /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		2D579250228471B700E9BD26 /* CivilizationSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CivilizationSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D579253228471B700E9BD26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D579255228471B700E9BD26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				2D579253228471B700E9BD26 /* AppDelegate.swift */,
 				2D579255228471B700E9BD26 /* ViewController.swift */,
+				2D3EDA852285C69D00683EBE /* Resource.swift */,
 				2D579257228471B700E9BD26 /* Main.storyboard */,
 				09C97E00228478DD00F84098 /* CityHallViewController.swift */,
 				09C97E02228478EB00F84098 /* UpgradesViewController.swift */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09C97DFF228478C000F84098 /* ResourcesViewController.swift in Sources */,
+				2D3EDA862285C69D00683EBE /* Resource.swift in Sources */,
 				09C97DFD2284789800F84098 /* MarketViewController.swift in Sources */,
 				09C97E01228478DD00F84098 /* CityHallViewController.swift in Sources */,
 				2D579256228471B700E9BD26 /* ViewController.swift in Sources */,
