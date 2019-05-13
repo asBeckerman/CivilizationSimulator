@@ -440,9 +440,8 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FpI-jZ-v7I">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="FpI-jZ-v7I">
                                 <rect key="frame" x="253" y="633" width="91" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="BUY"/>
                                     <segment title="SELL"/>
@@ -454,13 +453,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="FpI-jZ-v7I" firstAttribute="leading" secondItem="ZGu-ok-eox" secondAttribute="leading" constant="253" id="7yx-HQ-cTl"/>
                             <constraint firstItem="lq6-kP-VGS" firstAttribute="top" secondItem="ZGu-ok-eox" secondAttribute="top" id="KQC-Gi-4Dt"/>
+                            <constraint firstItem="FpI-jZ-v7I" firstAttribute="top" secondItem="lq6-kP-VGS" secondAttribute="bottom" constant="6" id="Qgs-5j-4Sy"/>
                             <constraint firstItem="lq6-kP-VGS" firstAttribute="leading" secondItem="ZGu-ok-eox" secondAttribute="leading" id="a8y-rH-HQD"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="leading" secondItem="ZGu-ok-eox" secondAttribute="leading" id="cee-Cz-2ht"/>
+                            <constraint firstItem="ZGu-ok-eox" firstAttribute="bottom" secondItem="FpI-jZ-v7I" secondAttribute="bottom" constant="6" id="ggV-5p-VIH"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="trailing" secondItem="ZGu-ok-eox" secondAttribute="trailing" id="hr2-cv-QqN"/>
                             <constraint firstItem="lq6-kP-VGS" firstAttribute="trailing" secondItem="ZGu-ok-eox" secondAttribute="trailing" id="j3p-wi-Lpa"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="bottom" secondItem="ZGu-ok-eox" secondAttribute="bottom" id="ljb-KX-UmJ"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="top" secondItem="lq6-kP-VGS" secondAttribute="bottom" id="oKs-cP-EYj"/>
+                            <constraint firstItem="ZGu-ok-eox" firstAttribute="trailing" secondItem="FpI-jZ-v7I" secondAttribute="trailing" constant="31" id="yi3-Qf-EIZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZGu-ok-eox"/>
                     </view>

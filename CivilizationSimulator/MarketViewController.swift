@@ -48,10 +48,10 @@ class MarketViewController: UIViewController {
             {
             case 0:
                 
-            Butt1.titleLabel.text = "SUP"
+                Butt1.titleLabel!.text = "SUP"
                 
             case 1:
-                Butt1.titleLabel.text = "SUP9"
+                Butt1.titleLabel!.text = "SUP9"
                 
             default:
                 break
