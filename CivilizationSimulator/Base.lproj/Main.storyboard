@@ -41,7 +41,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wXd-Ep-xO3">
-                                                <rect key="frame" x="213" y="8" width="100" height="31"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="coZ-Uy-lwK"/>
                                                 </constraints>
@@ -50,8 +50,14 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVH-hV-tA7">
-                                                <rect key="frame" x="321" y="9" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="4Xw-hv-YbF"/>
+                                                </constraints>
+                                                <state key="normal" title="BUY  "/>
+                                                <connections>
+                                                    <action selector="BUTT1ACTION:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="r0P-We-cdh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -75,7 +81,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RGc-qY-Ucm">
-                                                <rect key="frame" x="213" y="8" width="100" height="31"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="qZw-El-BRT"/>
                                                 </constraints>
@@ -84,8 +90,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9v-fi-Msg">
-                                                <rect key="frame" x="321" y="9" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Th4-UH-hvV"/>
+                                                </constraints>
+                                                <state key="normal" title="BUY  "/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -109,7 +118,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hbb-Mp-Zzn">
-                                                <rect key="frame" x="213" y="8" width="100" height="31"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="Mje-Hh-8bH"/>
                                                 </constraints>
@@ -118,8 +127,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFJ-ID-3mf">
-                                                <rect key="frame" x="321" y="9" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="x9V-75-Ffe"/>
+                                                </constraints>
+                                                <state key="normal" title="BUY  "/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -143,7 +155,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eJW-3M-Cfr">
-                                                <rect key="frame" x="213" y="8" width="100" height="30.5"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="30.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="YOD-UX-z1e"/>
                                                 </constraints>
@@ -152,8 +164,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfa-42-Pak">
-                                                <rect key="frame" x="321" y="9" width="46" height="29.5"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="29.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="OCZ-DK-tpO"/>
+                                                </constraints>
+                                                <state key="normal" title="BUY  "/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -177,7 +192,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4nB-Qq-TnT">
-                                                <rect key="frame" x="213" y="8" width="100" height="31"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="1ZB-2Q-ebO"/>
                                                 </constraints>
@@ -186,8 +201,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMr-ka-n59">
-                                                <rect key="frame" x="321" y="9" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="hVC-rv-iqM"/>
+                                                </constraints>
+                                                <state key="normal" title="BUY  "/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -211,7 +229,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zdf-qX-8oM">
-                                                <rect key="frame" x="213" y="8" width="100" height="31"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="SwZ-9Q-M0t"/>
                                                 </constraints>
@@ -220,8 +238,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE1-n1-qkn">
-                                                <rect key="frame" x="321" y="9" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="iZa-X1-OfG"/>
+                                                </constraints>
+                                                <state key="normal" title="BUY  "/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -245,7 +266,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8w-Qu-EhU">
-                                                <rect key="frame" x="213" y="8" width="100" height="31"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="98X-Vf-oUI"/>
                                                 </constraints>
@@ -254,8 +275,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKM-Na-4qn">
-                                                <rect key="frame" x="321" y="9" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="isB-OF-M64"/>
+                                                </constraints>
+                                                <state key="normal" title="BUY  "/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -279,7 +303,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V3W-oL-3EP">
-                                                <rect key="frame" x="213" y="8" width="100" height="31"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="yPC-KT-euy"/>
                                                 </constraints>
@@ -288,8 +312,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFH-xW-qfg">
-                                                <rect key="frame" x="321" y="9" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="MhN-rg-oBF"/>
+                                                </constraints>
+                                                <state key="normal" title="BUY  "/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -313,7 +340,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Svw-bn-fcL">
-                                                <rect key="frame" x="213" y="8" width="100" height="31"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="cho-SO-ta3"/>
                                                 </constraints>
@@ -322,8 +349,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mL7-WO-A7P">
-                                                <rect key="frame" x="321" y="9" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="F3F-2O-5HW"/>
+                                                </constraints>
+                                                <state key="normal" title="BUY  "/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -347,7 +377,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qye-Wu-tjH">
-                                                <rect key="frame" x="213" y="8" width="100" height="30.5"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="30.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="DQk-b8-V3l"/>
                                                 </constraints>
@@ -356,8 +386,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPN-Od-UK8">
-                                                <rect key="frame" x="321" y="9" width="46" height="29.5"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="29.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="akv-nL-Kal"/>
+                                                </constraints>
+                                                <state key="normal" title=" BUY  "/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -381,7 +414,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dRw-IK-Kdc">
-                                                <rect key="frame" x="213" y="8" width="100" height="31"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="QR1-da-MpP"/>
                                                 </constraints>
@@ -390,8 +423,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhO-VL-nyr">
-                                                <rect key="frame" x="321" y="9" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="F1R-1r-GMp"/>
+                                                </constraints>
+                                                <state key="normal" title="BUY  "/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -415,7 +451,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QmU-82-FcS">
-                                                <rect key="frame" x="213" y="8" width="100" height="31"/>
+                                                <rect key="frame" x="219" y="8" width="100" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="pKn-Pr-hQt"/>
                                                 </constraints>
@@ -424,8 +460,11 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh9-Yy-ijt">
-                                                <rect key="frame" x="321" y="9" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="327" y="9" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="25n-sI-Fb8"/>
+                                                </constraints>
+                                                <state key="normal" title="BUY  "/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -440,36 +479,39 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="FpI-jZ-v7I">
-                                <rect key="frame" x="253" y="633" width="91" height="29"/>
-                                <segments>
-                                    <segment title="BUY"/>
-                                    <segment title="SELL"/>
-                                </segments>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Em1-Rl-RLe">
+                                <rect key="frame" x="246" y="632" width="31" height="30"/>
+                                <state key="normal" title="BUY"/>
                                 <connections>
-                                    <action selector="BuySell:" destination="rS2-Px-qtQ" eventType="valueChanged" id="f2l-Hh-cjI"/>
+                                    <action selector="BUYBUTTON:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="90U-P4-Rcx"/>
                                 </connections>
-                            </segmentedControl>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCl-vd-qpG">
+                                <rect key="frame" x="298" y="632" width="35" height="30"/>
+                                <state key="normal" title="SELL"/>
+                                <connections>
+                                    <action selector="SELLBUTTON:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="cy0-zv-EsV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FpI-jZ-v7I" firstAttribute="leading" secondItem="ZGu-ok-eox" secondAttribute="leading" constant="253" id="7yx-HQ-cTl"/>
+                            <constraint firstItem="Em1-Rl-RLe" firstAttribute="top" secondItem="lq6-kP-VGS" secondAttribute="bottom" constant="5" id="Ewg-EO-HPL"/>
                             <constraint firstItem="lq6-kP-VGS" firstAttribute="top" secondItem="ZGu-ok-eox" secondAttribute="top" id="KQC-Gi-4Dt"/>
-                            <constraint firstItem="FpI-jZ-v7I" firstAttribute="top" secondItem="lq6-kP-VGS" secondAttribute="bottom" constant="6" id="Qgs-5j-4Sy"/>
                             <constraint firstItem="lq6-kP-VGS" firstAttribute="leading" secondItem="ZGu-ok-eox" secondAttribute="leading" id="a8y-rH-HQD"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="leading" secondItem="ZGu-ok-eox" secondAttribute="leading" id="cee-Cz-2ht"/>
-                            <constraint firstItem="ZGu-ok-eox" firstAttribute="bottom" secondItem="FpI-jZ-v7I" secondAttribute="bottom" constant="6" id="ggV-5p-VIH"/>
+                            <constraint firstItem="PCl-vd-qpG" firstAttribute="leading" secondItem="Em1-Rl-RLe" secondAttribute="trailing" constant="21" id="e8E-kb-NtV"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="trailing" secondItem="ZGu-ok-eox" secondAttribute="trailing" id="hr2-cv-QqN"/>
                             <constraint firstItem="lq6-kP-VGS" firstAttribute="trailing" secondItem="ZGu-ok-eox" secondAttribute="trailing" id="j3p-wi-Lpa"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="bottom" secondItem="ZGu-ok-eox" secondAttribute="bottom" id="ljb-KX-UmJ"/>
+                            <constraint firstItem="ZGu-ok-eox" firstAttribute="trailing" secondItem="PCl-vd-qpG" secondAttribute="trailing" constant="42" id="nqQ-Ja-1KB"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="top" secondItem="lq6-kP-VGS" secondAttribute="bottom" id="oKs-cP-EYj"/>
-                            <constraint firstItem="ZGu-ok-eox" firstAttribute="trailing" secondItem="FpI-jZ-v7I" secondAttribute="trailing" constant="31" id="yi3-Qf-EIZ"/>
+                            <constraint firstItem="PCl-vd-qpG" firstAttribute="top" secondItem="lq6-kP-VGS" secondAttribute="bottom" constant="5" id="yWE-Cc-j5x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZGu-ok-eox"/>
                     </view>
                     <navigationItem key="navigationItem" title="Market" id="bhq-Ox-fPq"/>
                     <connections>
-                        <outlet property="BUYSELL" destination="FpI-jZ-v7I" id="L72-0h-W0b"/>
                         <outlet property="Butt1" destination="aVH-hV-tA7" id="TuQ-Hi-9eY"/>
                         <outlet property="Butt10" destination="JPN-Od-UK8" id="whD-Q0-6mx"/>
                         <outlet property="Butt11" destination="fhO-VL-nyr" id="ee0-aR-Ysh"/>
@@ -482,6 +524,7 @@
                         <outlet property="Butt7" destination="NKM-Na-4qn" id="ogD-S9-BEd"/>
                         <outlet property="Butt8" destination="XFH-xW-qfg" id="a5x-je-b6s"/>
                         <outlet property="Butt9" destination="mL7-WO-A7P" id="b9X-iB-EJr"/>
+                        <outlet property="ErrorLabel" destination="Lrg-uk-xgl" id="K0e-TS-Gwh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gPv-OS-YMb" userLabel="First Responder" sceneMemberID="firstResponder"/>

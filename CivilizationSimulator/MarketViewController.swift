@@ -9,6 +9,7 @@
 import UIKit
 
 class MarketViewController: UIViewController {
+    var marketState = true;
     @IBOutlet weak var Butt1: UIButton!
     @IBOutlet weak var Butt2: UIButton!
     @IBOutlet weak var Butt3: UIButton!
@@ -24,9 +25,11 @@ class MarketViewController: UIViewController {
     @IBOutlet weak var Butt11: UIButton!
     @IBOutlet weak var Butt12: UIButton!
     @IBOutlet weak var BUYSELL: UISegmentedControl!
+    @IBOutlet weak var ErrorLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ButtonLabelStuff()
         // Do any additional setup after loading the view.
     }
     
@@ -40,22 +43,48 @@ class MarketViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    
-    @IBAction func BuySell(_ sender: UISegmentedControl) {
-      
-            switch BUYSELL.selectedSegmentIndex
-            {
-            case 0:
-                
-                Butt1.titleLabel!.text = "SUP"
-                
-            case 1:
-                Butt1.titleLabel!.text = "SUP9"
-                
-            default:
-                break
-            }
+    @IBAction func BUYBUTTON(_ sender: Any) {
+        marketState = true
+        ButtonLabelStuff()
         
+    }
+    @IBAction func SELLBUTTON(_ sender: Any) {
+        marketState = false
+        ButtonLabelStuff()
+        
+        
+    }
+    @IBAction func BUTT1ACTION(_ sender: Any) {
+        print(marketState)
+    }
+    func ButtonLabelStuff(){
+        if marketState{
+            Butt1.titleLabel!.text = "BUY"
+            Butt2.titleLabel!.text = "BUY"
+            Butt3.titleLabel!.text = "BUY"
+            Butt4.titleLabel!.text = "BUY"
+            Butt5.titleLabel!.text = "BUY"
+            Butt6.titleLabel!.text = "BUY"
+            Butt7.titleLabel!.text = "BUY"
+            Butt8.titleLabel!.text = "BUY"
+            Butt9.titleLabel!.text = "BUY"
+            Butt10.titleLabel!.text = "BUY"
+            Butt11.titleLabel!.text = "BUY"
+            Butt12.titleLabel!.text = "BUY"
+            }
+        if !marketState{
+            Butt1.titleLabel!.text = "SELL"
+            Butt2.titleLabel!.text = "SELL"
+            Butt3.titleLabel!.text = "SELL"
+            Butt4.titleLabel!.text = "SELL"
+            Butt5.titleLabel!.text = "SELL"
+            Butt6.titleLabel!.text = "SELL"
+            Butt7.titleLabel!.text = "SELL"
+            Butt8.titleLabel!.text = "SELL"
+            Butt9.titleLabel!.text = "SELL"
+            Butt10.titleLabel!.text = "SELL"
+            Butt11.titleLabel!.text = "SELL"
+            Butt12.titleLabel!.text = "SELL"
+        }
     }
 }

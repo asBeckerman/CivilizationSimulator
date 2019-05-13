@@ -9,12 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
      var timer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(repaintS), userInfo: nil, repeats: true)
+    timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(repaintS), userInfo: nil, repeats: true)
         
         
     }
@@ -22,6 +21,8 @@ class ViewController: UIViewController {
     @objc func repaintS()
     {
         print("Minute Passed")
+        let vc = MarketViewController()
+        print(vc.marketState)
     }
 
 
