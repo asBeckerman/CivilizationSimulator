@@ -56,7 +56,7 @@
                                                 </constraints>
                                                 <state key="normal" title="BUY  "/>
                                                 <connections>
-                                                    <action selector="BUTT1ACTION:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="r0P-We-cdh"/>
+                                                    <action selector="Butt1Action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="IKk-KA-TWN"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -479,43 +479,40 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Em1-Rl-RLe">
-                                <rect key="frame" x="246" y="632" width="31" height="30"/>
-                                <state key="normal" title="BUY"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yAc-h6-spg">
+                                <rect key="frame" x="253" y="634" width="91" height="28"/>
+                                <segments>
+                                    <segment title="BUY"/>
+                                    <segment title="SELL"/>
+                                </segments>
                                 <connections>
-                                    <action selector="BUYBUTTON:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="90U-P4-Rcx"/>
+                                    <action selector="segmentStuff:" destination="rS2-Px-qtQ" eventType="valueChanged" id="gCV-ep-pJj"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCl-vd-qpG">
-                                <rect key="frame" x="298" y="632" width="35" height="30"/>
-                                <state key="normal" title="SELL"/>
-                                <connections>
-                                    <action selector="SELLBUTTON:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="cy0-zv-EsV"/>
-                                </connections>
-                            </button>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Em1-Rl-RLe" firstAttribute="top" secondItem="lq6-kP-VGS" secondAttribute="bottom" constant="5" id="Ewg-EO-HPL"/>
+                            <constraint firstItem="ZGu-ok-eox" firstAttribute="trailing" secondItem="yAc-h6-spg" secondAttribute="trailing" constant="31" id="C0Y-HF-5hW"/>
                             <constraint firstItem="lq6-kP-VGS" firstAttribute="top" secondItem="ZGu-ok-eox" secondAttribute="top" id="KQC-Gi-4Dt"/>
                             <constraint firstItem="lq6-kP-VGS" firstAttribute="leading" secondItem="ZGu-ok-eox" secondAttribute="leading" id="a8y-rH-HQD"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="leading" secondItem="ZGu-ok-eox" secondAttribute="leading" id="cee-Cz-2ht"/>
-                            <constraint firstItem="PCl-vd-qpG" firstAttribute="leading" secondItem="Em1-Rl-RLe" secondAttribute="trailing" constant="21" id="e8E-kb-NtV"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="trailing" secondItem="ZGu-ok-eox" secondAttribute="trailing" id="hr2-cv-QqN"/>
                             <constraint firstItem="lq6-kP-VGS" firstAttribute="trailing" secondItem="ZGu-ok-eox" secondAttribute="trailing" id="j3p-wi-Lpa"/>
+                            <constraint firstItem="ZGu-ok-eox" firstAttribute="bottom" secondItem="yAc-h6-spg" secondAttribute="bottom" constant="6" id="kXh-RV-gaZ"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="bottom" secondItem="ZGu-ok-eox" secondAttribute="bottom" id="ljb-KX-UmJ"/>
-                            <constraint firstItem="ZGu-ok-eox" firstAttribute="trailing" secondItem="PCl-vd-qpG" secondAttribute="trailing" constant="42" id="nqQ-Ja-1KB"/>
                             <constraint firstItem="Lrg-uk-xgl" firstAttribute="top" secondItem="lq6-kP-VGS" secondAttribute="bottom" id="oKs-cP-EYj"/>
-                            <constraint firstItem="PCl-vd-qpG" firstAttribute="top" secondItem="lq6-kP-VGS" secondAttribute="bottom" constant="5" id="yWE-Cc-j5x"/>
+                            <constraint firstItem="yAc-h6-spg" firstAttribute="top" secondItem="lq6-kP-VGS" secondAttribute="bottom" constant="7" id="t6E-5e-40s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZGu-ok-eox"/>
                     </view>
                     <navigationItem key="navigationItem" title="Market" id="bhq-Ox-fPq"/>
                     <connections>
+                        <outlet property="BUYSELL1" destination="yAc-h6-spg" id="KF6-ly-LSG"/>
                         <outlet property="Butt1" destination="aVH-hV-tA7" id="TuQ-Hi-9eY"/>
                         <outlet property="Butt10" destination="JPN-Od-UK8" id="whD-Q0-6mx"/>
                         <outlet property="Butt11" destination="fhO-VL-nyr" id="ee0-aR-Ysh"/>
                         <outlet property="Butt12" destination="Wh9-Yy-ijt" id="rXB-hU-2Xp"/>
+                        <outlet property="Butt1Text" destination="wXd-Ep-xO3" id="XeE-Vb-bRq"/>
                         <outlet property="Butt2" destination="p9v-fi-Msg" id="HO1-UE-Q08"/>
                         <outlet property="Butt3" destination="aFJ-ID-3mf" id="hps-YP-Sb1"/>
                         <outlet property="Butt4" destination="Bfa-42-Pak" id="j1k-FZ-84K"/>
@@ -545,22 +542,22 @@
                                 <items>
                                     <barButtonItem title="Market" id="gL4-cl-vf3">
                                         <connections>
-                                            <segue destination="rS2-Px-qtQ" kind="show" id="odc-fy-37A"/>
+                                            <segue destination="rS2-Px-qtQ" kind="show" identifier="Market" id="odc-fy-37A"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Resources" id="CMR-fu-2f4">
                                         <connections>
-                                            <segue destination="fpL-OO-raq" kind="show" id="X5b-zk-hwl"/>
+                                            <segue destination="fpL-OO-raq" kind="show" identifier="Resources" id="X5b-zk-hwl"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="City Hall" id="OkU-rb-Pbw">
                                         <connections>
-                                            <segue destination="2uA-of-o9I" kind="show" id="iEQ-WF-eKZ"/>
+                                            <segue destination="2uA-of-o9I" kind="show" identifier="CityHall" id="iEQ-WF-eKZ"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title="Upgrades" id="EPp-YS-kAG">
                                         <connections>
-                                            <segue destination="QyD-7M-7QZ" kind="show" id="cmU-s0-kbl"/>
+                                            <segue destination="QyD-7M-7QZ" kind="show" identifier="Upgrades" id="cmU-s0-kbl"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>

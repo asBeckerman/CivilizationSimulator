@@ -24,12 +24,14 @@ class MarketViewController: UIViewController {
     @IBOutlet weak var Butt10: UIButton!
     @IBOutlet weak var Butt11: UIButton!
     @IBOutlet weak var Butt12: UIButton!
-    @IBOutlet weak var BUYSELL: UISegmentedControl!
+    @IBOutlet weak var BUYSELL1: UISegmentedControl!
     @IBOutlet weak var ErrorLabel: UILabel!
     
+    @IBOutlet weak var Butt1Text: UITextField!
+    var Reso: [Resource]!
+    var playerMoney: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
-        ButtonLabelStuff()
         // Do any additional setup after loading the view.
     }
     
@@ -43,48 +45,52 @@ class MarketViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func BUYBUTTON(_ sender: Any) {
-        marketState = true
-        ButtonLabelStuff()
-        
+    @IBAction func Butt1Action(_ sender: Any) {
+        let attempt = Reso[0].price * Int(Butt1Text.text!)!
+        playerMoney = playerMoney - attempt
+        ErrorStuff()
     }
-    @IBAction func SELLBUTTON(_ sender: Any) {
-        marketState = false
-        ButtonLabelStuff()
-        
-        
+    
+    
+    
+    func ErrorStuff(){
+        ErrorLabel.text = " Money left: \(playerMoney)"
     }
-    @IBAction func BUTT1ACTION(_ sender: Any) {
-        print(marketState)
-    }
-    func ButtonLabelStuff(){
-        if marketState{
-            Butt1.titleLabel!.text = "BUY"
-            Butt2.titleLabel!.text = "BUY"
-            Butt3.titleLabel!.text = "BUY"
-            Butt4.titleLabel!.text = "BUY"
-            Butt5.titleLabel!.text = "BUY"
-            Butt6.titleLabel!.text = "BUY"
-            Butt7.titleLabel!.text = "BUY"
-            Butt8.titleLabel!.text = "BUY"
-            Butt9.titleLabel!.text = "BUY"
-            Butt10.titleLabel!.text = "BUY"
-            Butt11.titleLabel!.text = "BUY"
-            Butt12.titleLabel!.text = "BUY"
-            }
-        if !marketState{
-            Butt1.titleLabel!.text = "SELL"
-            Butt2.titleLabel!.text = "SELL"
-            Butt3.titleLabel!.text = "SELL"
-            Butt4.titleLabel!.text = "SELL"
-            Butt5.titleLabel!.text = "SELL"
-            Butt6.titleLabel!.text = "SELL"
-            Butt7.titleLabel!.text = "SELL"
-            Butt8.titleLabel!.text = "SELL"
-            Butt9.titleLabel!.text = "SELL"
-            Butt10.titleLabel!.text = "SELL"
-            Butt11.titleLabel!.text = "SELL"
-            Butt12.titleLabel!.text = "SELL"
+    @IBAction func segmentStuff(_ sender: Any) {
+        switch BUYSELL1.selectedSegmentIndex
+        {
+        case 0:
+            marketState = true
+            Butt1.setTitle("BUY", for: .normal)
+            Butt2.setTitle("BUY", for: .normal)
+            Butt3.setTitle("BUY", for: .normal)
+            Butt4.setTitle("BUY", for: .normal)
+            Butt5.setTitle("BUY", for: .normal)
+            Butt6.setTitle("BUY", for: .normal)
+            Butt7.setTitle("BUY", for: .normal)
+            Butt8.setTitle("BUY", for: .normal)
+            Butt9.setTitle("BUY", for: .normal)
+            Butt10.setTitle("BUY", for: .normal)
+            Butt11.setTitle("BUY", for: .normal)
+            Butt12.setTitle("BUY", for: .normal)
+            
+        case 1:
+            marketState = false
+            Butt1.setTitle("SELL", for: .normal)
+            Butt2.setTitle("SELL", for: .normal)
+            Butt3.setTitle("SELL", for: .normal)
+            Butt4.setTitle("SELL", for: .normal)
+            Butt5.setTitle("SELL", for: .normal)
+            Butt6.setTitle("SELL", for: .normal)
+            Butt7.setTitle("SELL", for: .normal)
+            Butt8.setTitle("SELL", for: .normal)
+            Butt9.setTitle("SELL", for: .normal)
+            Butt10.setTitle("SELL", for: .normal)
+            Butt11.setTitle("SELL", for: .normal)
+            Butt12.setTitle("SELL", for: .normal)
+        default:
+            break
         }
     }
+    
 }
