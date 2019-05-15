@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        retrieveData()
+        
     timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(repaintS), userInfo: nil, repeats: true)
         
         
@@ -24,6 +27,7 @@ class ViewController: UIViewController {
     @objc func repaintS()
     {
         print("Minute Passed")
+        storeData()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -43,6 +47,28 @@ class ViewController: UIViewController {
         
         
     }
+    
+    func storeData()
+    {
+        var userDefaults = UserDefaults.standard
+        
+        let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: Resources)
+        
+        userDefaults.set(encodedData, forKey:"resources")
+    }
+    
+    func retrieveData()
+    {
+        var userDefaults = UserDefaults.standard
+        
+        if let decoded = userDefaults.object(forKey: "resources") as? NSData {
+            Resources = NSKeyedUnarchiver.unarchiveObject(with: decoded as Data) as! [Resource]
+            
+        }
+           
+        }
+        
+    
 
 }
 
