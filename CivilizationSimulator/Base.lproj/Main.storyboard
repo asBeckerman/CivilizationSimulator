@@ -95,6 +95,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="Th4-UH-hvV"/>
                                                 </constraints>
                                                 <state key="normal" title="BUY  "/>
+                                                <connections>
+                                                    <action selector="BUTT2Action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="KAP-UF-SrF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -132,6 +135,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="x9V-75-Ffe"/>
                                                 </constraints>
                                                 <state key="normal" title="BUY  "/>
+                                                <connections>
+                                                    <action selector="Butt3Action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="Q6x-xD-tug"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -169,6 +175,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="OCZ-DK-tpO"/>
                                                 </constraints>
                                                 <state key="normal" title="BUY  "/>
+                                                <connections>
+                                                    <action selector="Butt4action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="6VU-eO-xQr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -206,6 +215,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="hVC-rv-iqM"/>
                                                 </constraints>
                                                 <state key="normal" title="BUY  "/>
+                                                <connections>
+                                                    <action selector="Butt5Action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="fiO-OD-uWt"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -243,6 +255,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="iZa-X1-OfG"/>
                                                 </constraints>
                                                 <state key="normal" title="BUY  "/>
+                                                <connections>
+                                                    <action selector="Butt6Action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="Ojf-nL-25a"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -280,6 +295,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="isB-OF-M64"/>
                                                 </constraints>
                                                 <state key="normal" title="BUY  "/>
+                                                <connections>
+                                                    <action selector="Butt7Action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="4KG-3x-Qqq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -317,6 +335,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="MhN-rg-oBF"/>
                                                 </constraints>
                                                 <state key="normal" title="BUY  "/>
+                                                <connections>
+                                                    <action selector="Butt8Action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="54u-A2-2Q6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -354,6 +375,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="F3F-2O-5HW"/>
                                                 </constraints>
                                                 <state key="normal" title="BUY  "/>
+                                                <connections>
+                                                    <action selector="Butt9Action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="u0Z-H5-eWJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -391,6 +415,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="akv-nL-Kal"/>
                                                 </constraints>
                                                 <state key="normal" title=" BUY  "/>
+                                                <connections>
+                                                    <action selector="Butt10Action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="1sE-vp-nkv"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -428,6 +455,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="F1R-1r-GMp"/>
                                                 </constraints>
                                                 <state key="normal" title="BUY  "/>
+                                                <connections>
+                                                    <action selector="Butt11action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="UrK-mM-Klq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -465,6 +495,9 @@
                                                     <constraint firstAttribute="width" constant="40" id="25n-sI-Fb8"/>
                                                 </constraints>
                                                 <state key="normal" title="BUY  "/>
+                                                <connections>
+                                                    <action selector="Butt12Action:" destination="rS2-Px-qtQ" eventType="touchUpInside" id="WFK-pw-Qxg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -510,17 +543,28 @@
                         <outlet property="BUYSELL1" destination="yAc-h6-spg" id="KF6-ly-LSG"/>
                         <outlet property="Butt1" destination="aVH-hV-tA7" id="TuQ-Hi-9eY"/>
                         <outlet property="Butt10" destination="JPN-Od-UK8" id="whD-Q0-6mx"/>
+                        <outlet property="Butt10Text" destination="qye-Wu-tjH" id="Ahr-Q2-9jM"/>
                         <outlet property="Butt11" destination="fhO-VL-nyr" id="ee0-aR-Ysh"/>
+                        <outlet property="Butt11Text" destination="dRw-IK-Kdc" id="QNU-mF-NSX"/>
                         <outlet property="Butt12" destination="Wh9-Yy-ijt" id="rXB-hU-2Xp"/>
+                        <outlet property="Butt12Text" destination="QmU-82-FcS" id="RJ4-UL-0OQ"/>
                         <outlet property="Butt1Text" destination="wXd-Ep-xO3" id="XeE-Vb-bRq"/>
                         <outlet property="Butt2" destination="p9v-fi-Msg" id="HO1-UE-Q08"/>
+                        <outlet property="Butt2Text" destination="RGc-qY-Ucm" id="D1m-Td-jFf"/>
                         <outlet property="Butt3" destination="aFJ-ID-3mf" id="hps-YP-Sb1"/>
+                        <outlet property="Butt3Text" destination="Hbb-Mp-Zzn" id="aHL-Bn-3W7"/>
                         <outlet property="Butt4" destination="Bfa-42-Pak" id="j1k-FZ-84K"/>
+                        <outlet property="Butt4Text" destination="eJW-3M-Cfr" id="zLv-mM-ses"/>
                         <outlet property="Butt5" destination="xMr-ka-n59" id="WQE-tY-FLD"/>
+                        <outlet property="Butt5Text" destination="4nB-Qq-TnT" id="C4W-jH-SOV"/>
                         <outlet property="Butt6" destination="cE1-n1-qkn" id="vjV-n4-kdh"/>
+                        <outlet property="Butt6Text" destination="Zdf-qX-8oM" id="wiK-Fm-lnX"/>
                         <outlet property="Butt7" destination="NKM-Na-4qn" id="ogD-S9-BEd"/>
+                        <outlet property="Butt7Text" destination="q8w-Qu-EhU" id="ixj-NQ-TTf"/>
                         <outlet property="Butt8" destination="XFH-xW-qfg" id="a5x-je-b6s"/>
+                        <outlet property="Butt8Text" destination="V3W-oL-3EP" id="aHg-ca-Ipt"/>
                         <outlet property="Butt9" destination="mL7-WO-A7P" id="b9X-iB-EJr"/>
+                        <outlet property="Butt9Text" destination="Svw-bn-fcL" id="rvk-Cv-83D"/>
                         <outlet property="ErrorLabel" destination="Lrg-uk-xgl" id="K0e-TS-Gwh"/>
                     </connections>
                 </viewController>

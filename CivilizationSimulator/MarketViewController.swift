@@ -28,6 +28,18 @@ class MarketViewController: UIViewController {
     @IBOutlet weak var ErrorLabel: UILabel!
     
     @IBOutlet weak var Butt1Text: UITextField!
+    @IBOutlet weak var Butt2Text: UITextField!
+    @IBOutlet weak var Butt3Text: UITextField!
+    @IBOutlet weak var Butt4Text: UITextField!
+    @IBOutlet weak var Butt5Text: UITextField!
+    @IBOutlet weak var Butt6Text: UITextField!
+    @IBOutlet weak var Butt7Text: UITextField!
+    @IBOutlet weak var Butt8Text: UITextField!
+    @IBOutlet weak var Butt9Text: UITextField!
+    @IBOutlet weak var Butt10Text: UITextField!
+    @IBOutlet weak var Butt11Text: UITextField!
+    @IBOutlet weak var Butt12Text: UITextField!
+    
     var Reso: [Resource]!
     var player: Player!
     override func viewDidLoad() {
@@ -74,6 +86,56 @@ class MarketViewController: UIViewController {
         }
     }
     
+    @IBAction func BUTT2Action(_ sender: Any) {
+        let attempt = Reso[1].price * Int(Butt2Text.text!)!
+        if(player.level >= Reso[1].level){
+            if(marketState){
+                if(attempt < player.money){
+                    player.money = player.money - attempt
+                    Reso[1].quantity = Reso[1].quantity + attempt/Reso[1].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorMoneyStuff()
+                }
+            }
+            else{
+                if(attempt/Reso[1].price <= Reso[1].quantity){
+                    player.money += attempt
+                    Reso[1].quantity = Reso[1].quantity - attempt/Reso[1].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorSellStuff()
+                }
+            }
+        }
+        else{
+            ErrorLevel()
+        }
+    }
+    @IBAction func Butt3Action(_ sender: Any) {
+    }
+    @IBAction func Butt4action(_ sender: Any) {
+    }
+    @IBAction func Butt5Action(_ sender: Any) {
+    }
+    @IBAction func Butt6Action(_ sender: Any) {
+    }
+    @IBAction func Butt7Action(_ sender: Any) {
+    }
+    
+    @IBAction func Butt8Action(_ sender: Any) {
+    }
+    
+    @IBAction func Butt9Action(_ sender: Any) {
+    }
+    @IBAction func Butt10Action(_ sender: Any) {
+    }
+    @IBAction func Butt11action(_ sender: Any) {
+    }
+    @IBAction func Butt12Action(_ sender: Any) {
+    }
     
     
     func ErrorMoneyStuff(){
