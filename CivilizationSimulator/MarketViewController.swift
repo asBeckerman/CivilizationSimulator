@@ -29,8 +29,7 @@ class MarketViewController: UIViewController {
     
     @IBOutlet weak var Butt1Text: UITextField!
     var Reso: [Resource]!
-    var playerMoney: Int!
-    var playerLevel: Int!
+    var player: Player!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -48,10 +47,10 @@ class MarketViewController: UIViewController {
     */
     @IBAction func Butt1Action(_ sender: Any) {
         let attempt = Reso[0].price * Int(Butt1Text.text!)!
-        if(playerLevel >= Reso[0].level){
+        if(player.level >= Reso[0].level){
         if(marketState){
-            if(attempt < playerMoney){
-                playerMoney = playerMoney - attempt
+            if(attempt < player.money){
+                player.money = player.money - attempt
                 Reso[0].quantity = Reso[0].quantity + attempt/Reso[0].price
                 ErrorClear()
             }
@@ -61,7 +60,7 @@ class MarketViewController: UIViewController {
         }
         else{
             if(attempt/Reso[0].price <= Reso[0].quantity){
-                playerMoney += attempt
+                player.money += attempt
                 Reso[0].quantity = Reso[0].quantity - attempt/Reso[0].price
                 ErrorClear()
             }
@@ -78,13 +77,13 @@ class MarketViewController: UIViewController {
     
     
     func ErrorMoneyStuff(){
-        ErrorLabel.text = " not enough money. you have \(playerMoney!) "
+        ErrorLabel.text = " not enough money. you have \(player.money) "
     }
     func ErrorSellStuff(){
         ErrorLabel.text = " Your trying to sell to much idiot "
     }
     func ErrorClear(){
-        ErrorLabel.text = " you have \(playerMoney!) "
+        ErrorLabel.text = " you have \(player.money) "
     }
     func ErrorLevel(){
         ErrorLabel.text = " you have not unlocked this yet dumbbutt"
