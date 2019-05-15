@@ -30,6 +30,7 @@ class MarketViewController: UIViewController {
     @IBOutlet weak var Butt1Text: UITextField!
     var Reso: [Resource]!
     var playerMoney: Int!
+    var playerLevel: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -42,20 +43,53 @@ class MarketViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // Pass the selected object to the new view g.
     }
     */
     @IBAction func Butt1Action(_ sender: Any) {
         let attempt = Reso[0].price * Int(Butt1Text.text!)!
-        playerMoney = playerMoney - attempt
-        ErrorStuff()
+        if(playerLevel >= Reso[0].level){
+        if(marketState){
+            if(attempt < playerMoney){
+                playerMoney = playerMoney - attempt
+                Reso[0].quantity = Reso[0].quantity + attempt/Reso[0].price
+                ErrorClear()
+            }
+            else{
+                ErrorMoneyStuff()
+            }
+        }
+        else{
+            if(attempt/Reso[0].price <= Reso[0].quantity){
+                playerMoney += attempt
+                Reso[0].quantity = Reso[0].quantity - attempt/Reso[0].price
+                ErrorClear()
+            }
+            else{
+                ErrorSellStuff()
+            }
+        }
+    }
+        else{
+            ErrorLevel()
+        }
     }
     
     
     
-    func ErrorStuff(){
-        ErrorLabel.text = " Money left: \(playerMoney)"
+    func ErrorMoneyStuff(){
+        ErrorLabel.text = " not enough money. you have \(playerMoney!) "
     }
+    func ErrorSellStuff(){
+        ErrorLabel.text = " Your trying to sell to much idiot "
+    }
+    func ErrorClear(){
+        ErrorLabel.text = " you have \(playerMoney!) "
+    }
+    func ErrorLevel(){
+        ErrorLabel.text = " you have not unlocked this yet dumbbutt"
+    }
+
     @IBAction func segmentStuff(_ sender: Any) {
         switch BUYSELL1.selectedSegmentIndex
         {
