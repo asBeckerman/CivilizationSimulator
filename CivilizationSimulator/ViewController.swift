@@ -27,6 +27,13 @@ class ViewController: UIViewController {
     @objc func repaintS()
     {
         print("Minute Passed")
+        Resources[0].price = Int.random(in:3..<8)
+        Resources[1].price = Int.random(in:3..<8)
+        Resources[2].price = Int.random(in:3..<8)
+        Resources[3].price = Int.random(in:3..<8)
+    
+ 
+        
         storeData()
     }
 
