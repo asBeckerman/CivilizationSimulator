@@ -20,6 +20,7 @@
 		2D579261228471B900E9BD26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D57925F228471B900E9BD26 /* LaunchScreen.storyboard */; };
 		2D57926C228471B900E9BD26 /* CivilizationSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D57926B228471B900E9BD26 /* CivilizationSimulatorTests.swift */; };
 		2D579277228471B900E9BD26 /* CivilizationSimulatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D579276228471B900E9BD26 /* CivilizationSimulatorUITests.swift */; };
+		2DBF9203228DB32900A3F8CE /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF9202228DB32900A3F8CE /* Building.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		2D579272228471B900E9BD26 /* CivilizationSimulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CivilizationSimulatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D579276228471B900E9BD26 /* CivilizationSimulatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilizationSimulatorUITests.swift; sourceTree = "<group>"; };
 		2D579278228471B900E9BD26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DBF9202228DB32900A3F8CE /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				2D3EDA852285C69D00683EBE /* Resource.swift */,
 				09E68655228C602000232EC5 /* Player.swift */,
 				2D579257228471B700E9BD26 /* Main.storyboard */,
+				2DBF9202228DB32900A3F8CE /* Building.swift */,
 				09C97E00228478DD00F84098 /* CityHallViewController.swift */,
 				09C97E02228478EB00F84098 /* UpgradesViewController.swift */,
 				09C97DFC2284789800F84098 /* MarketViewController.swift */,
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3EDA862285C69D00683EBE /* Resource.swift in Sources */,
+				2DBF9203228DB32900A3F8CE /* Building.swift in Sources */,
 				09C97DFD2284789800F84098 /* MarketViewController.swift in Sources */,
 				09C97E01228478DD00F84098 /* CityHallViewController.swift in Sources */,
 				2D579256228471B700E9BD26 /* ViewController.swift in Sources */,
