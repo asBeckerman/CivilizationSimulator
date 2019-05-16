@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
      var timer: Timer!
     
+    @IBOutlet weak var textFieldResource: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,10 +44,7 @@ class ViewController: UIViewController {
                 let controller = segue.destination as! MarketViewController
                 controller.Reso = Resources
                 controller.player = player
-            } else if segue.identifier == "Resources" {
-                let controller = segue.destination as! ResourcesViewController
-                
-            }else if segue.identifier == "CityHall" {
+            } else if segue.identifier == "CityHall" {
                 let controller = segue.destination as! CityHallViewController
                 
             }else if segue.identifier == "Upgrades" {

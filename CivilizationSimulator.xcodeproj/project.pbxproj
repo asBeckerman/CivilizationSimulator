@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		09C97DFD2284789800F84098 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97DFC2284789800F84098 /* MarketViewController.swift */; };
-		09C97DFF228478C000F84098 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97DFE228478C000F84098 /* ResourcesViewController.swift */; };
 		09C97E01228478DD00F84098 /* CityHallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97E00228478DD00F84098 /* CityHallViewController.swift */; };
 		09C97E03228478EB00F84098 /* UpgradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C97E02228478EB00F84098 /* UpgradesViewController.swift */; };
 		09E68656228C602000232EC5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E68655228C602000232EC5 /* Player.swift */; };
@@ -42,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		09C97DFC2284789800F84098 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
-		09C97DFE228478C000F84098 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		09C97E00228478DD00F84098 /* CityHallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityHallViewController.swift; sourceTree = "<group>"; };
 		09C97E02228478EB00F84098 /* UpgradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradesViewController.swift; sourceTree = "<group>"; };
 		09E68655228C602000232EC5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				2D579257228471B700E9BD26 /* Main.storyboard */,
 				09C97E00228478DD00F84098 /* CityHallViewController.swift */,
 				09C97E02228478EB00F84098 /* UpgradesViewController.swift */,
-				09C97DFE228478C000F84098 /* ResourcesViewController.swift */,
 				09C97DFC2284789800F84098 /* MarketViewController.swift */,
 				2D57925D228471B900E9BD26 /* Assets.xcassets */,
 				2D57925F228471B900E9BD26 /* LaunchScreen.storyboard */,
@@ -277,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C97DFF228478C000F84098 /* ResourcesViewController.swift in Sources */,
 				2D3EDA862285C69D00683EBE /* Resource.swift in Sources */,
 				09C97DFD2284789800F84098 /* MarketViewController.swift in Sources */,
 				09C97E01228478DD00F84098 /* CityHallViewController.swift in Sources */,
