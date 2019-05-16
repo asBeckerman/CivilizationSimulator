@@ -8,23 +8,34 @@
 
 import Foundation
 class Player: NSObject, NSCoding {
-    func encode(with aCoder: NSCoder) {
-        <#code#>
-    }
+  
     
-    required init?(coder aDecoder: NSCoder) {
-        <#code#>
-    }
-    
-    var level: Int
+    var levelP: Int
     var money:Int
 
     
     
     init(level:Int, money:Int)
     {
-        self.level = level
+        self.levelP = level
         self.money = money
     }
+    
+    
+    required convenience init?(coder aDecoder: NSCoder) {
+      
+        let money = aDecoder.decodeObject(forKey:"money") as! Int
+        let level = aDecoder.decodeObject(forKey:"levelP") as! Int
+        
+        self.init(level:level, money:money)
+    }
+    
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(money, forKey:"price")
+        aCoder.encode(levelP, forKey: "levelP")
+     
+    }
+    
         
 }

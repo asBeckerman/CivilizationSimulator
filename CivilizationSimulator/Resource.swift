@@ -28,9 +28,9 @@ class Resource: NSObject, NSCoding {
     
     required convenience init?(coder aDecoder: NSCoder) {
         let type = aDecoder.decodeObject(forKey:"type") as! String
-        let quantity = aDecoder.decodeInteger(forKey:"quantity") as!  Int
-        let price = aDecoder.decodeObject(forKey:"price") as! Int
-         let level = aDecoder.decodeObject(forKey:"price") as! Int
+        let quantity = aDecoder.decodeInteger(forKey:"quantity")
+        let price = aDecoder.decodeInteger(forKey:"price")
+         let level = aDecoder.decodeInteger(forKey:"level")
         
         self.init(type: type, quantity: quantity, price: price, level: level)
     }

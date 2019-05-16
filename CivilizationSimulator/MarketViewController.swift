@@ -59,7 +59,7 @@ class MarketViewController: UIViewController {
     */
     @IBAction func Butt1Action(_ sender: Any) {
         let attempt = Reso[0].price * Int(Butt1Text.text!)!
-        if(player.level >= Reso[0].level){
+        if(player.levelP >= Reso[0].level){
         if(marketState){
             if(attempt < player.money){
                 player.money = player.money - attempt
@@ -88,7 +88,7 @@ class MarketViewController: UIViewController {
     
     @IBAction func BUTT2Action(_ sender: Any) {
         let attempt = Reso[1].price * Int(Butt2Text.text!)!
-        if(player.level >= Reso[1].level){
+        if(player.levelP >= Reso[1].level){
             if(marketState){
                 if(attempt < player.money){
                     player.money = player.money - attempt
