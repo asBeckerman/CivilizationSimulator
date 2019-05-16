@@ -115,26 +115,286 @@ class MarketViewController: UIViewController {
         }
     }
     @IBAction func Butt3Action(_ sender: Any) {
+        let attempt = Reso[2].price * Int(Butt3Text.text!)!
+        if(player.level >= Reso[2].level){
+            if(marketState){
+                if(attempt < player.money){
+                    player.money = player.money - attempt
+                    Reso[2].quantity = Reso[2].quantity + attempt/Reso[2].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorMoneyStuff()
+                }
+            }
+            else{
+                if(attempt/Reso[1].price <= Reso[1].quantity){
+                    player.money += attempt
+                    Reso[1].quantity = Reso[1].quantity - attempt/Reso[1].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorSellStuff()
+                }
+            }
+        }
+        else{
+            ErrorLevel()
+        }
     }
     @IBAction func Butt4action(_ sender: Any) {
+        let attempt = Reso[3].price * Int(Butt4Text.text!)!
+        if(player.level >= Reso[3].level){
+            if(marketState){
+                if(attempt < player.money){
+                    player.money = player.money - attempt
+                    Reso[3].quantity = Reso[3].quantity + attempt/Reso[3].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorMoneyStuff()
+                }
+            }
+            else{
+                if(attempt/Reso[3].price <= Reso[3].quantity){
+                    player.money += attempt
+                    Reso[3].quantity = Reso[3].quantity - attempt/Reso[3].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorSellStuff()
+                }
+            }
+        }
+        else{
+            ErrorLevel()
+        }
     }
     @IBAction func Butt5Action(_ sender: Any) {
+        let attempt = Reso[4].price * Int(Butt5Text.text!)!
+        if(player.level >= Reso[4].level){
+            if(marketState){
+                if(attempt < player.money){
+                    player.money = player.money - attempt
+                    Reso[4].quantity = Reso[4].quantity + attempt/Reso[4].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorMoneyStuff()
+                }
+            }
+            else{
+                if(attempt/Reso[4].price <= Reso[4].quantity){
+                    player.money += attempt
+                    Reso[4].quantity = Reso[4].quantity - attempt/Reso[4].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorSellStuff()
+                }
+            }
+        }
+        else{
+            ErrorLevel()
+        }
     }
     @IBAction func Butt6Action(_ sender: Any) {
+        let attempt = Reso[5].price * Int(Butt6Text.text!)!
+        if(player.level >= Reso[5].level){
+            if(marketState){
+                if(attempt < player.money){
+                    player.money = player.money - attempt
+                    Reso[5].quantity = Reso[1].quantity + attempt/Reso[1].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorMoneyStuff()
+                }
+            }
+            else{
+                if(attempt/Reso[5].price <= Reso[5].quantity){
+                    player.money += attempt
+                    Reso[5].quantity = Reso[5].quantity - attempt/Reso[5].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorSellStuff()
+                }
+            }
+        }
+        else{
+            ErrorLevel()
+        }
     }
     @IBAction func Butt7Action(_ sender: Any) {
+        let attempt = Reso[6].price * Int(Butt7Text.text!)!
+        if(player.level >= Reso[6].level){
+            if(marketState){
+                if(attempt < player.money){
+                    player.money = player.money - attempt
+                    Reso[6].quantity = Reso[6].quantity + attempt/Reso[6].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorMoneyStuff()
+                }
+            }
+            else{
+                if(attempt/Reso[6].price <= Reso[6].quantity){
+                    player.money += attempt
+                    Reso[6].quantity = Reso[6].quantity - attempt/Reso[6].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorSellStuff()
+                }
+            }
+        }
+        else{
+            ErrorLevel()
+        }
     }
     
     @IBAction func Butt8Action(_ sender: Any) {
+        let attempt = Reso[7].price * Int(Butt8Text.text!)!
+        if(player.level >= Reso[7].level){
+            if(marketState){
+                if(attempt < player.money){
+                    player.money = player.money - attempt
+                    Reso[7].quantity = Reso[7].quantity + attempt/Reso[7].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorMoneyStuff()
+                }
+            }
+            else{
+                if(attempt/Reso[7].price <= Reso[7].quantity){
+                    player.money += attempt
+                    Reso[7].quantity = Reso[7].quantity - attempt/Reso[7].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorSellStuff()
+                }
+            }
+        }
+        else{
+            ErrorLevel()
+        }
     }
     
     @IBAction func Butt9Action(_ sender: Any) {
+        let attempt = Reso[8].price * Int(Butt9Text.text!)!
+        if(player.level >= Reso[8].level){
+            if(marketState){
+                if(attempt < player.money){
+                    player.money = player.money - attempt
+                    Reso[8].quantity = Reso[8].quantity + attempt/Reso[8].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorMoneyStuff()
+                }
+            }
+            else{
+                if(attempt/Reso[8].price <= Reso[8].quantity){
+                    player.money += attempt
+                    Reso[8].quantity = Reso[8].quantity - attempt/Reso[8].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorSellStuff()
+                }
+            }
+        }
+        else{
+            ErrorLevel()
+        }
     }
     @IBAction func Butt10Action(_ sender: Any) {
+        let attempt = Reso[9].price * Int(Butt10Text.text!)!
+        if(player.level >= Reso[9].level){
+            if(marketState){
+                if(attempt < player.money){
+                    player.money = player.money - attempt
+                    Reso[9].quantity = Reso[9].quantity + attempt/Reso[9].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorMoneyStuff()
+                }
+            }
+            else{
+                if(attempt/Reso[9].price <= Reso[9].quantity){
+                    player.money += attempt
+                    Reso[9].quantity = Reso[9].quantity - attempt/Reso[9].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorSellStuff()
+                }
+            }
+        }
+        else{
+            ErrorLevel()
+        }
     }
     @IBAction func Butt11action(_ sender: Any) {
+        let attempt = Reso[10].price * Int(Butt11Text.text!)!
+        if(player.level >= Reso[10].level){
+            if(marketState){
+                if(attempt < player.money){
+                    player.money = player.money - attempt
+                    Reso[10].quantity = Reso[10].quantity + attempt/Reso[10].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorMoneyStuff()
+                }
+            }
+            else{
+                if(attempt/Reso[10].price <= Reso[10].quantity){
+                    player.money += attempt
+                    Reso[10].quantity = Reso[10].quantity - attempt/Reso[10].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorSellStuff()
+                }
+            }
+        }
+        else{
+            ErrorLevel()
+        }
     }
     @IBAction func Butt12Action(_ sender: Any) {
+        let attempt = Reso[11].price * Int(Butt12Text.text!)!
+        if(player.level >= Reso[11].level){
+            if(marketState){
+                if(attempt < player.money){
+                    player.money = player.money - attempt
+                    Reso[11].quantity = Reso[11].quantity + attempt/Reso[11].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorMoneyStuff()
+                }
+            }
+            else{
+                if(attempt/Reso[11].price <= Reso[11].quantity){
+                    player.money += attempt
+                    Reso[11].quantity = Reso[11].quantity - attempt/Reso[11].price
+                    ErrorClear()
+                }
+                else{
+                    ErrorSellStuff()
+                }
+            }
+        }
+        else{
+            ErrorLevel()
+        }
     }
     
     
