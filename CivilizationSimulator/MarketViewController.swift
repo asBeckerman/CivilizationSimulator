@@ -39,11 +39,37 @@ class MarketViewController: UIViewController {
     @IBOutlet weak var Butt10Text: UITextField!
     @IBOutlet weak var Butt11Text: UITextField!
     @IBOutlet weak var Butt12Text: UITextField!
+   
+    @IBOutlet weak var CottonLabel: UILabel!
+    @IBOutlet weak var TimberLabel: UILabel!
+    @IBOutlet weak var StoneLabel: UILabel!
+    @IBOutlet weak var WheatLabel: UILabel!
+    @IBOutlet weak var ClothLabel: UILabel!
+    @IBOutlet weak var LumberLabel: UILabel!
+    @IBOutlet weak var OreLabel: UILabel!
+    @IBOutlet weak var BreadLabel: UILabel!
+    @IBOutlet weak var ShirtLabel: UILabel!
+    
+    @IBOutlet weak var PlankLabel: UILabel!
+    @IBOutlet weak var CopperLabel: UILabel!
+    @IBOutlet weak var AnimalLabel: UILabel!
     
     var Reso: [Resource]!
     var player: Player!
     override func viewDidLoad() {
         super.viewDidLoad()
+        CottonLabel.text = "Cotton: \(Reso[0].price)"
+        TimberLabel.text = "Timber: \(Reso[1].price)"
+        StoneLabel.text = "Stone \(Reso[2].price)"
+        WheatLabel.text = "Wheat: \(Reso[3].price)"
+        ClothLabel.text = "Cloth: \(Reso[4].price)"
+        LumberLabel.text = "Lumber: \(Reso[5].price)"
+        OreLabel.text = "Ore: \(Reso[6].price)"
+        BreadLabel.text = "Bread: \(Reso[7].price)"
+        ShirtLabel.text = "Shirt: \(Reso[8].price)"
+        PlankLabel.text = "2x4: \(Reso[9].price)"
+        CopperLabel.text = "Copper: \(Reso[10].price)"
+        AnimalLabel.text = "Animal Food: \(Reso[11].price)"
         // Do any additional setup after loading the view.
     }
     
@@ -116,7 +142,7 @@ class MarketViewController: UIViewController {
     }
     @IBAction func Butt3Action(_ sender: Any) {
         let attempt = Reso[2].price * Int(Butt3Text.text!)!
-        if(player.level >= Reso[2].level){
+        if(player.levelP >= Reso[2].level){
             if(marketState){
                 if(attempt < player.money){
                     player.money = player.money - attempt
@@ -144,7 +170,7 @@ class MarketViewController: UIViewController {
     }
     @IBAction func Butt4action(_ sender: Any) {
         let attempt = Reso[3].price * Int(Butt4Text.text!)!
-        if(player.level >= Reso[3].level){
+        if(player.levelP >= Reso[3].level){
             if(marketState){
                 if(attempt < player.money){
                     player.money = player.money - attempt
@@ -172,7 +198,7 @@ class MarketViewController: UIViewController {
     }
     @IBAction func Butt5Action(_ sender: Any) {
         let attempt = Reso[4].price * Int(Butt5Text.text!)!
-        if(player.level >= Reso[4].level){
+        if(player.levelP >= Reso[4].level){
             if(marketState){
                 if(attempt < player.money){
                     player.money = player.money - attempt
@@ -200,7 +226,7 @@ class MarketViewController: UIViewController {
     }
     @IBAction func Butt6Action(_ sender: Any) {
         let attempt = Reso[5].price * Int(Butt6Text.text!)!
-        if(player.level >= Reso[5].level){
+        if(player.levelP >= Reso[5].level){
             if(marketState){
                 if(attempt < player.money){
                     player.money = player.money - attempt
@@ -228,7 +254,7 @@ class MarketViewController: UIViewController {
     }
     @IBAction func Butt7Action(_ sender: Any) {
         let attempt = Reso[6].price * Int(Butt7Text.text!)!
-        if(player.level >= Reso[6].level){
+        if(player.levelP >= Reso[6].level){
             if(marketState){
                 if(attempt < player.money){
                     player.money = player.money - attempt
@@ -257,7 +283,7 @@ class MarketViewController: UIViewController {
     
     @IBAction func Butt8Action(_ sender: Any) {
         let attempt = Reso[7].price * Int(Butt8Text.text!)!
-        if(player.level >= Reso[7].level){
+        if(player.levelP >= Reso[7].level){
             if(marketState){
                 if(attempt < player.money){
                     player.money = player.money - attempt
@@ -286,7 +312,7 @@ class MarketViewController: UIViewController {
     
     @IBAction func Butt9Action(_ sender: Any) {
         let attempt = Reso[8].price * Int(Butt9Text.text!)!
-        if(player.level >= Reso[8].level){
+        if(player.levelP >= Reso[8].level){
             if(marketState){
                 if(attempt < player.money){
                     player.money = player.money - attempt
@@ -314,7 +340,7 @@ class MarketViewController: UIViewController {
     }
     @IBAction func Butt10Action(_ sender: Any) {
         let attempt = Reso[9].price * Int(Butt10Text.text!)!
-        if(player.level >= Reso[9].level){
+        if(player.levelP >= Reso[9].level){
             if(marketState){
                 if(attempt < player.money){
                     player.money = player.money - attempt
@@ -342,7 +368,7 @@ class MarketViewController: UIViewController {
     }
     @IBAction func Butt11action(_ sender: Any) {
         let attempt = Reso[10].price * Int(Butt11Text.text!)!
-        if(player.level >= Reso[10].level){
+        if(player.levelP >= Reso[10].level){
             if(marketState){
                 if(attempt < player.money){
                     player.money = player.money - attempt
@@ -370,7 +396,7 @@ class MarketViewController: UIViewController {
     }
     @IBAction func Butt12Action(_ sender: Any) {
         let attempt = Reso[11].price * Int(Butt12Text.text!)!
-        if(player.level >= Reso[11].level){
+        if(player.levelP >= Reso[11].level){
             if(marketState){
                 if(attempt < player.money){
                     player.money = player.money - attempt
