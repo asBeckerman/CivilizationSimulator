@@ -39,11 +39,37 @@ class MarketViewController: UIViewController {
     @IBOutlet weak var Butt10Text: UITextField!
     @IBOutlet weak var Butt11Text: UITextField!
     @IBOutlet weak var Butt12Text: UITextField!
+   
+    @IBOutlet weak var CottonLabel: UILabel!
+    @IBOutlet weak var TimberLabel: UILabel!
+    @IBOutlet weak var StoneLabel: UILabel!
+    @IBOutlet weak var WheatLabel: UILabel!
+    @IBOutlet weak var ClothLabel: UILabel!
+    @IBOutlet weak var LumberLabel: UILabel!
+    @IBOutlet weak var OreLabel: UILabel!
+    @IBOutlet weak var BreadLabel: UILabel!
+    @IBOutlet weak var ShirtLabel: UILabel!
+    
+    @IBOutlet weak var PlankLabel: UILabel!
+    @IBOutlet weak var CopperLabel: UILabel!
+    @IBOutlet weak var AnimalLabel: UILabel!
     
     var Reso: [Resource]!
     var player: Player!
     override func viewDidLoad() {
         super.viewDidLoad()
+        CottonLabel.text = "Cotton: \(Reso[0].price)"
+        TimberLabel.text = "Timber: \(Reso[1].price)"
+        StoneLabel.text = "Stone \(Reso[2].price)"
+        WheatLabel.text = "Wheat: \(Reso[3].price)"
+        ClothLabel.text = "Cloth: \(Reso[4].price)"
+        LumberLabel.text = "Lumber: \(Reso[5].price)"
+        OreLabel.text = "Ore: \(Reso[6].price)"
+        BreadLabel.text = "Bread: \(Reso[7].price)"
+        ShirtLabel.text = "Shirt: \(Reso[8].price)"
+        PlankLabel.text = "2x4: \(Reso[9].price)"
+        CopperLabel.text = "Copper: \(Reso[10].price)"
+        AnimalLabel.text = "Animal Food: \(Reso[11].price)"
         // Do any additional setup after loading the view.
     }
     
