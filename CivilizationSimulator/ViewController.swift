@@ -31,6 +31,18 @@ class ViewController: UIViewController {
         Resources[1].price = Int.random(in:3..<8)
         Resources[2].price = Int.random(in:3..<8)
         Resources[3].price = Int.random(in:3..<8)
+        
+        Resources[4].price = Int.random(in:8..<14)
+        Resources[5].price = Int.random(in:8..<14)
+        Resources[6].price = Int.random(in:8..<14)
+        Resources[7].price = Int.random(in:8..<14)
+        
+        Resources[8].price = Int.random(in:13..<21)
+        Resources[9].price = Int.random(in:13..<21)
+        Resources[10].price = Int.random(in:13..<21)
+        Resources[11].price = Int.random(in:13..<21)
+    
+        
     
  
         
