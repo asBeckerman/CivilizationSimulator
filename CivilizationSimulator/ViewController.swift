@@ -10,11 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     var Resources: [Resource] = [Resource.init(type: "Cotton", quantity: 0, price: 5, level: 1),Resource.init(type: "Timber", quantity: 0, price: 5, level: 1),Resource.init(type: "Stone", quantity: 0, price: 5, level: 1),Resource.init(type: "Wheat", quantity: 0, price: 5, level: 1),Resource.init(type: "Cloth", quantity: 0, price: 10, level: 2),Resource.init(type: "Lumber", quantity: 0, price: 10, level: 2),Resource.init(type: "Ore", quantity: 0, price: 10, level: 2),Resource.init(type: "Bread", quantity: 0, price: 10, level: 2),Resource.init(type: "Shirt", quantity: 0, price: 15, level: 3),Resource.init(type: "2x4", quantity: 0, price: 15, level: 3),Resource.init(type: "Copper", quantity: 0, price: 15, level: 3),Resource.init(type: "Animal Food", quantity: 0, price: 15, level: 3)]
-    var player:Player = Player(level: 1000,money: 1)
+    var player:Player = Player(level: 1,money: 1000)
     
      var timer: Timer!
     
-    @IBOutlet weak var textFieldResource: UITextField!
+    @IBOutlet weak var textFieldResource: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
         
     timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(repaintS), userInfo: nil, repeats: true)
         
-        
+        textFieldResource.text = resourceCheck()
     }
     
     @objc func repaintS()
@@ -84,7 +85,16 @@ class ViewController: UIViewController {
         }
            
         }
-        
+    
+    func resourceCheck()->String{
+       var rString = ""
+        for r in Resources {
+            if( r.quantity>0){
+                rString += "\(r.type): \(r.quantity)\n"
+            }
+        }
+        return rString
+    }
     
 
 }
