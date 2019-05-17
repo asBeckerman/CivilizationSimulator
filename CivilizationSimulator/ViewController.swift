@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     var Resources: [Resource] = [Resource.init(type: "Cotton", quantity: 0, price: 5, level: 1),Resource.init(type: "Timber", quantity: 0, price: 5, level: 1),Resource.init(type: "Stone", quantity: 0, price: 5, level: 1),Resource.init(type: "Wheat", quantity: 0, price: 5, level: 1),Resource.init(type: "Cloth", quantity: 0, price: 10, level: 2),Resource.init(type: "Lumber", quantity: 0, price: 10, level: 2),Resource.init(type: "Ore", quantity: 0, price: 10, level: 2),Resource.init(type: "Bread", quantity: 0, price: 10, level: 2),Resource.init(type: "Shirt", quantity: 0, price: 15, level: 3),Resource.init(type: "2x4", quantity: 0, price: 15, level: 3),Resource.init(type: "Copper", quantity: 0, price: 15, level: 3),Resource.init(type: "Animal Food", quantity: 0, price: 15, level: 3)]
+    var buildings: [Building] = [Building.init(type: "farm", quantity: 0, price: 1000, level: 0)]
     var player:Player = Player(level: 1,money: 1000)
     
      var timer: Timer!
     
-    @IBOutlet weak var textFieldResource: UITextView!
-    
+    @IBOutlet weak var textFieldResource: UITextView!    
+    @IBOutlet weak var textFieldBuildings: UITextView!
+    @IBOutlet weak var textFieldPro: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +28,9 @@ class ViewController: UIViewController {
         textFieldResource.text = resourceCheck()
         
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        textFieldResource.text = resourceCheck()
+    }
     @objc func repaintS()
     {
         print("Minute Passed")
@@ -87,7 +91,7 @@ class ViewController: UIViewController {
         }
         
         if let decoded = userDefaults.object(forKey: "player") as? NSData {
-         player = NSKeyedUnarchiver.unarchiveObject(with: decoded as Data) as! Player
+        // player = NSKeyedUnarchiver.unarchiveObject(with: decoded as Data) as! Player
             
         }
            
