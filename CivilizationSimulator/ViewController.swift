@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(repaintS), userInfo: nil, repeats: true)
         
         textFieldResource.text = resourceCheck()
+        
     }
     
     @objc func repaintS()

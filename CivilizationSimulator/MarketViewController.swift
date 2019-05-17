@@ -70,6 +70,7 @@ class MarketViewController: UIViewController {
         PlankLabel.text = "2x4: \(Reso[9].price)"
         CopperLabel.text = "Copper: \(Reso[10].price)"
         AnimalLabel.text = "Animal Food: \(Reso[11].price)"
+        ErrorLabel.text = "Money: \(player.money)"
         // Do any additional setup after loading the view.
     }
     
