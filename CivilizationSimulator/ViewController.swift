@@ -73,6 +73,7 @@ class ViewController: UIViewController {
         let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: Resources)
         
         userDefaults.set(encodedData, forKey:"resources")
+        userDefaults.set(encodedData, forKey:"player")
     }
     
     func retrieveData()
@@ -81,6 +82,11 @@ class ViewController: UIViewController {
         
         if let decoded = userDefaults.object(forKey: "resources") as? NSData {
             Resources = NSKeyedUnarchiver.unarchiveObject(with: decoded as Data) as! [Resource]
+            
+        }
+        
+        if let decoded = userDefaults.object(forKey: "player") as? NSData {
+         player = NSKeyedUnarchiver.unarchiveObject(with: decoded as Data) as! Player
             
         }
            
